@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    background-color: bisque;
+}
+
+.navbar {
+    /* Estilos de colores y letra */
+    color: white;
+    font-size: 22px;
+
+    /* Estilos de Flexbox */
+    display: flex;
+
+    /* Alineamiento horizontal de los items del flexbox */
+    justify-content: space-between;
+
+    /* Alineamiento vertical de los items del flexbox */
+    align-items: flex-end;
+
+    /* Pegar barra en la superior */
+    position: sticky;
+    top: 0;
+
+    /* el z-index se usa para decidir si un elemento queda ENCIMA(1) o Debajo(-1) de los demás */
+    z-index: 1;
+}
+
+/* Logo de la barra de navegación */
+.navbar img {
+    display: block;
+    height: 100px;
+    padding: 0.2em;
+}
+
+/* Lista del Menú */
+.navbar ul {
+    /* Eliminar espacios indeseados */
+    margin: 0;
+    padding: 0;
+
+    /* Eliminar viñetas de la lista */
+    list-style: none;
+
+    /* Estilos del Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos de los links del menú */
+.navbar a {
+    /* Estilo de las letras */
+    color: white;
+    text-decoration: none;
+
+    /* Ajustar espacio entre borde y texto */
+    padding: 1em;
+    display: block;
+}
+
+/* Efecto al pasar el mouse sobre el link */
+.navbar a:hover {
+    background-color: rgb(20, 0, 199);
+}

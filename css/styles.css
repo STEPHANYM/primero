@@ -1,12 +1,14 @@
-* {
+body {
     margin: 0%;
-    background-color: bisque;
+    background-color: rgba(150, 150, 150, 0.521);
+    box-sizing: border-box;
 }
 
 .navbar {
     /* Estilos de colores y letra */
     color: white;
     font-size: 22px;
+    background-color: rgba(15, 15, 15, 0.623);
 
     /* Estilos de Flexbox */
     display: flex;
@@ -60,4 +62,113 @@
 /* Efecto al pasar el mouse sobre el link */
 .navbar a:hover {
     background-color: rgb(20, 0, 199);
+}
+
+.title1 {
+    font-size: 100px;
+    align-items: center;
+
+}
+
+.box {
+    width: 900px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+.element2 {
+    animation: image-change2 25s ease-in-out 1s 10 normal forwards;
+}
+
+.relative-image {
+    position: relative;
+    padding: 1em;
+}
+
+.text-image {
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+
+    background-color: rgba(15, 15, 15, 0.623);
+    color: rgba(255, 191, 0);
+    border-radius: 10px 100px / 120px;
+    width: 55%;
+    padding: 2em;
+}
+
+.cap-font {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.styleimg {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.big-font {
+    font-size: large;
+}
+
+.movimiento {
+    animation: desplazamiento 10s 1s 10;
+}
+
+.espacio__secciones {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+@keyframes image-change2 {
+    0% {
+        background-image: url(../Imagenes/BEAR2.jpg
+);
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url(../Imagenes/Bourse.jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(../Imagenes/TRADING.jpg   );
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(../Imagenes/fintech2.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../Imagenes/NeoBanks.png);
+        background-size: cover;
+    }
+
+
+}
+
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    75% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
 }
